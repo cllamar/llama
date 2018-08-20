@@ -5,6 +5,7 @@ use utf8;
 if (! open LOG, ">", "log") {               #chown root:root logfile 
 	die "Cannot create logfile: $!";
 }
+
 close LOG;
 
 if ( @ARGV < 2 ) {
